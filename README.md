@@ -13,4 +13,6 @@ Based on hypernym-hyponym pairs from the corpus.
 ### Methods
 ### Datasets
 
+## Derivative Study of Taxonomy
+
 
