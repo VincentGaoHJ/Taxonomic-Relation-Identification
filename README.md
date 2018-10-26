@@ -2,6 +2,7 @@
 This is a note for constructing taxonomy.
 ## 总结研究方法
 ### Pattern-Based Methods
+Based on hypernym-hyponym pairs from the corpus.
 ### Clustering-Based Methods
 ### Supervised Methods
 
