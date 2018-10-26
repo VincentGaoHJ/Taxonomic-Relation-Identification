@@ -11,3 +11,5 @@ This is a note for constructing taxonomy.
 2. A local embedding module for learning term embeddings that maintain strong discriminative power at different levels of the taxonomy. 
 ### Methods
 ### Datasets
+
+
