@@ -2,7 +2,7 @@
 This is a note for constructing taxonomy. 
 
 - [总结研究](#总结研究)  
-- [TaxoGen: Constructing Topical Concept Taxonomy by Adaptive](#taxogen: constructing-topical-concept-taxonomy-by-adaptive)  
+- [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](#taxogen：constructing-topical-concept-taxonomy-by-adaptive)  
 - [Derivative Study of Taxonomy](#derivative-study-of-taxonomy)  
 
 ## 总结研究
@@ -11,7 +11,7 @@ Based on hypernym-hyponym pairs from the corpus.
 ### Clustering-Based Methods
 ### Supervised Methods
 
-## [TaxoGen: Constructing Topical Concept Taxonomy by Adaptive](https://pdfs.semanticscholar.org/c420/af96a6725414b7c631757503ed6ac61020e6.pdf)
+## [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](https://pdfs.semanticscholar.org/c420/af96a6725414b7c631757503ed6ac61020e6.pdf)
 ### Contributions
 1. An adaptive spherical clustering module for allocating terms to proper levels when splitting a coarse topic into fine-grained ones.
 2. A local embedding module for learning term embeddings that maintain strong discriminative power at different levels of the taxonomy. 
