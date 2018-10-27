@@ -1,7 +1,13 @@
 # Taxonomic-Relation-Identification
 This is a note for constructing taxonomy. 
 
-[TOC]
+- [总结研究](#总结研究)  
+- [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](#taxogen：constructing-topical-concept-taxonomy-by-adaptive)  
+- [Derivative Study of Taxonomy](#derivative-study-of-taxonomy)  
+  - [Background](#background) 
+  - [Design inspirations](#design-inspirations) 
+  - [Innovation point](#innovation-point)  
+  - [Developmental vision](#developmental-vision) 
 
 ## 总结研究
 ### Pattern-Based Methods
