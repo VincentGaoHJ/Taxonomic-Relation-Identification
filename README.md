@@ -1,7 +1,7 @@
 # Taxonomic-Relation-Identification
 This is a note for constructing taxonomy. 
 
-> [TOC]
+[TOC]
 
 ## 总结研究
 ### Pattern-Based Methods
