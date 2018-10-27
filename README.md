@@ -57,14 +57,8 @@ This paper proposes a novel method for semantic hierarchy construction based on 
 
 
 ### Compared Methods
-
-
-
-
-aaaaaaaaaaaaaa
-
+阿打算开发就拉会计分录扣三分
 ---
 
 ## Derivative Study of Taxonomy
 
-vvvvvvvvvvvvvvvv
