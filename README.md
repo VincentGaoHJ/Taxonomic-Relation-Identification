@@ -50,9 +50,18 @@ Based on hypernym-hyponym pairs from the corpus.
 This paper proposes a novel method for semantic hierarchy construction based on word embeddings, which are trained using a large-scale corpus.
 
 
+=======
+
+### Methods
+**1. Learning a linear projection which maps words to their hypernyms**
+
+
+### Datasets
+
+
+### Compared Methods
 
 ---
 
 ## Derivative Study of Taxonomy
 
-vvvvvvvvvvvvvvvv
