@@ -1,11 +1,6 @@
 # Taxonomic-Relation-Identification
 This is a note for constructing taxonomy. 
 
-- [总结研究](#总结研究)  
-- [TaxoGen：Topical Concept Taxonomy by Adaptive](#taxogen-topical-concept-taxonomy-by-adaptive)  
-- [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](#taxogen-constructing-topical-concept-taxonomy-by-adaptive)  
-- [Derivative Study of Taxonomy](#derivative-study-of-taxonomy)  
-
 ## 总结研究
 ### Pattern-Based Methods
 Based on hypernym-hyponym pairs from the corpus.
