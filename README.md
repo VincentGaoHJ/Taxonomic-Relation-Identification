@@ -66,5 +66,3 @@ This paper proposes a novel method for semantic hierarchy construction based on 
 ---
 
 ## Derivative Study of Taxonomy
-
-vvvvvvvvvvvvvvvv
