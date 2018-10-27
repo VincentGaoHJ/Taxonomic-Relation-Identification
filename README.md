@@ -2,7 +2,7 @@
 This is a note for constructing taxonomy. 
 
 - [总结研究](#总结研究)  
-- [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](#taxogen：constructing-topical-concept-taxonomy-by-adaptive)  
+- [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](#taxogen-constructing-topical-concept-taxonomy-by-adaptive)  
 - [Derivative Study of Taxonomy](#derivative-study-of-taxonomy)  
 
 ## 总结研究
