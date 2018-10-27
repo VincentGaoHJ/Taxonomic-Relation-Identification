@@ -59,10 +59,12 @@ This paper proposes a novel method for semantic hierarchy construction based on 
 ### Compared Methods
 
 
-### Quantitative Analysis
 
 
+aaaaaaaaaaaaaa
 
 ---
 
 ## Derivative Study of Taxonomy
+
+vvvvvvvvvvvvvvvv
