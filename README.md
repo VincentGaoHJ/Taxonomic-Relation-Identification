@@ -1,11 +1,15 @@
 # Taxonomic-Relation-Identification
 This is a note for constructing taxonomy. 
 
+---
+
 ## 总结研究
 ### Pattern-Based Methods
 Based on hypernym-hyponym pairs from the corpus.
 ### Clustering-Based Methods
 ### Supervised Methods
+
+---
 
 ## [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](https://pdfs.semanticscholar.org/c420/af96a6725414b7c631757503ed6ac61020e6.pdf)
 ### Contributions
@@ -28,16 +32,18 @@ Based on hypernym-hyponym pairs from the corpus.
 ### Compared Methods
 1. HLDA(Hierarchical Latent Dirichlet Allocation Model)
 > [Hierarchical Topic Models and the Nested Chinese Restaurant Process](https://papers.nips.cc/paper/2466-hierarchical-topic-models-and-the-nested-chinese-restaurant-process.pdf)
-3. HPAM(Hierarchical Pachinko Allocation Model)
+2. HPAM(Hierarchical Pachinko Allocation Model)
 > [Mixtures of Hierarchical Topics with Pachinko Allocation](https://scholarworks.umass.edu/cgi/viewcontent.cgi?referer=https://www.google.co.jp/&httpsredir=1&article=1074&context=cs_faculty_pubs)
-5. HCLUS(Hierarchical Clustering)
-6. NoAC
-7. NoLe
+3. HCLUS(Hierarchical Clustering)
+4. NoAC
+5. NoLe
 
 ### Quantitative Analysis
 1. Relation Accuracy
 2. Term Coherence
 3. Cluster Quality
+
+---
 
 ## Derivative Study of Taxonomy
 
