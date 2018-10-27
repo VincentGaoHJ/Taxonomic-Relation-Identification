@@ -7,7 +7,6 @@ Based on hypernym-hyponym pairs from the corpus.
 ### Clustering-Based Methods
 ### Supervised Methods
 
-## TaxoGen：Topical Concept Taxonomy by Adaptive
 ## [TaxoGen：Constructing Topical Concept Taxonomy by Adaptive](https://pdfs.semanticscholar.org/c420/af96a6725414b7c631757503ed6ac61020e6.pdf)
 ### Contributions
 1. An adaptive spherical clustering module for allocating terms to proper levels when splitting a coarse topic into fine-grained ones.
