@@ -1,6 +1,8 @@
 # Taxonomic-Relation-Identification
-This is a note for constructing taxonomy.
+This is a note for constructing taxonomy. 
+
 > [TOC]
+
 ## 总结研究
 ### Pattern-Based Methods
 Based on hypernym-hyponym pairs from the corpus.
