@@ -47,18 +47,54 @@ Based on hypernym-hyponym pairs from the corpus.
 
 ## [Learning Semantic Hierarchies via Word Embeddings](http://ir.hit.edu.cn/~jguo/papers/acl2014-hypernym.pdf)
 ### Contributions
-This paper proposes a novel method for semantic hierarchy construction based on word embeddings, which are trained using a large-scale corpus.
+* This paper proposes a novel method for semantic hierarchy construction based on word embeddings, which are trained using a large-scale corpus.
+* Generally speaking, the proposed method greatly improves the recall and F-score but damages the precision.
 
 ### Methods
-**1. Learning a linear projection which maps words to their hypernyms**
+**1. Word Embedding Training**
+
+**2. A Uniform Linear Projection**
+Intuitively, we assume that all words can be projected to their hypernyms based on a uniform transition matrix.
+
+**3. Piecewise Linear Projections**
+Specifically, the input space is first segmented into several regions. That is, all word pairs (x, y) in the training data are first clustered into several groups, where word pairs in each group are expected to exhibit similar hypernym–hyponym relations.
+
+**4. Piecewise Linear Projections**
+ If a circle has only two nodes, we remove the weakest path. If a circle has
+more than two nodes, we reverse the weakest path to form an indirect hypernym–hyponym relation.
+
+
+### Datasets
+* Learning word embeddings: Baidubaike, which contains about 30 million sentences (about 780 million words). 
+* The Chinese segmentation is provided by the open-source Chinese language processing platform LTP5.
+* The training data for projection learning is collected from CilinE.
+* For evaluation, we collect the hypernyms for 418 entities, which are selected randomly from Baidubaike.
+* The final data set contains 655 unique hypernyms and 1,391 hypernym–hyponym relations among them. 
+* Randomly spliting the labeled data into 1/5 for development and 4/5 for testing. 
+
+
+### Compared Methods
+* MWiki+CilinE refers to the manually-built hierarchy extension method of Suchanek et al. (2008).
+* MPattern refers to the pattern-based method of Hearst (1992). 
+* MSnow originally proposed by Snow et al. (2005)
+
+---
+
+## [Translating Representations of Knowledge Graphs with Neighbors](http://delivery.acm.org/10.1145/3220000/3210085/p917-wang.pdf?ip=121.50.45.233&id=3210085&acc=OPENTOC&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E9F04A3A78F7D3B8D&__acm__=1540699470_287a3f90001d001c2072c8892070aa80)
+
+### Contributions
+
+
+### Methods
+**1. Word Embedding Training**
+
 
 
 ### Datasets
 
 
 ### Compared Methods
-阿打算开发就拉会计分录扣三分
----
+
 
 ## Derivative Study of Taxonomy
 
