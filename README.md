@@ -80,21 +80,48 @@ more than two nodes, we reverse the weakest path to form an indirect hypernym–
 
 ---
 
-## [Translating Representations of Knowledge Graphs with Neighbors](http://delivery.acm.org/10.1145/3220000/3210085/p917-wang.pdf?ip=121.50.45.233&id=3210085&acc=OPENTOC&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E9F04A3A78F7D3B8D&__acm__=1540699470_287a3f90001d001c2072c8892070aa80)
+## [Translating Representations of Knowledge Graphs with Neighbors](http://sigir.org/sigir2018/toc.html)
 
 ### Contributions
+**A approach to capture more precise context information and to incorporate neighbor information dynamically.**
+1. Firstly, we apply effective neighbor selection to reduce the number of neighbors.
+2. Second, we try to encode neighborhood information with context embeddings. 
+3. Third, we further utilize attention mechanism to focus on most influential nodes since different neighbors provide different level of information.
 
 
 ### Methods
-**1. Word Embedding Training**
+**1. Neighbor Selection**
+For each epoch t, we derive θte, which means the number of neighbors to be considered for an entity e.
+
+**2. Neighbor-based Representation**
+each object, entity or relation, is represented by two vectors, one is called object embedding while the other is called context embedding. 
+
+
+---
+
+## [Enriching Taxonomies With Functional Domain Knowledge](http://sigir.org/sigir2018/toc.html)
+
+### Contributions
+**A novel framework, ETF, to enrich large-scale, generic taxonomies with new concepts from resources such as news and research publications.**
+1. We develop a novel, fully automated framework, ETF, that generates semantic text-vector embeddings for each new concept. 
+2. We propose the use of a learning algorithm that combines a carefully selected set of graph-theoretic and semantic similarity based features to rank candidate parent relations. 
+3. We test ETF on large, real-world, publicly available knowledge bases such as Wikipedia and Wordnet, and outperform baselines at the task of inserting new concepts. 
 
 
 
-### Datasets
+### Methods
+**1. Finding Concepts and Taxonomic Relations**
+Acquire the entities and categories from the given taxonomy structure. And then obtain the novel concepts to be integrated into T.
+
+**2. Learning Concept Representations**
+ * To get the representation of an entity, we add a tf-weighted sum of hte word2vec embeddings of its context terms to the doc2vec representation of its associated document. 
+ * After creating embeddingd for the existing concepts in T, we next learn representations for the new concepts tp be inserted into T.
+
+**3. Filtering and Ranking Potential Parents**
 
 
-### Compared Methods
 
+---
 
 ## Derivative Study of Taxonomy
 
