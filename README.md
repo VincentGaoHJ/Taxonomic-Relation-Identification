@@ -13,7 +13,7 @@ This is a note for constructing taxonomy.
 * Based on hypernym-hyponym pairs from the corpus（基于词汇语义结构）
 * 因为语言结构的多样性和组成的不确定性，通过特别的pattern进行寻找，使得coverage低，正确率低
 
-### Word Embedding
+### Word Embedding（词嵌入）
 * 主要集中在通过词共生（word co-occurrence），来学习word embedding
 * 因此，相似的词往往有相似的embedding
 * 然而，此方法对于identify taxonomic relations效果差
@@ -57,6 +57,49 @@ This is a note for constructing taxonomy.
 1. Relation Accuracy
 2. Term Coherence
 3. Cluster Quality
+
+---
+
+## [Learning Term Embeddings for Taxonomic Relation Identification Using Dynamic Weighting Neural Network](http://www.aclweb.org/anthology/D16-1039)
+
+### Contributions
+1. For this purpose, we first design a dynamic weighting neural network to learn term embeddings based on not only the hypernym and hyponym terms, but also the contextual information between them. （提出用dynamic weighting neural network学习word embedding）
+2. We then apply such embeddings as features to identify taxonomic relations using a supervised method.（用得到的embedding为特征，用SVM进行分类）
+
+### Methods
+* **和Yu et al.（2015）的工作很像，distance-margin neural network（这个可以看一下）**
+
+**1. Learning Term Embedding**
+
+* Extracting taxonomic relations
+  * 用WordNet hierarchies获得所有的taxonomic relations，去掉其中的top-level terms
+* Extracting training triples
+  * 维基百科上获得含有taxonomic relations词语的句子，除了taxonomic relations词语，句子中其他词语都是context
+  * we use the Stanford parser (Manning et al., 2014) to parse it, and check whether there is any pair of terms which are nouns or noun phrases in the sentence having a taxonomic relationship. 
+
+* Training neural network
+  * Specifically, the target of the neural network is to predict the hypernym term from the given hyponym term and contextual words.
+  * 所有词用one-hot表示成向量（这个或许能改进）
+  * 根据context数量动态调整
+  * Softmax
+  
+
+
+**2. Supervised Taxonomic Relation Identification**
+* embedding作为特征
+* 输入SVM的特征（x, y, x-y）三个维度
+
+
+### Datasets
+1. BLESS(It covers 200 distinct, unambiguous concepts (terms); each of which is involved with terms, called relata, in some relations.)
+2. ENTAILMENT(It consists of 2,770 pairs of terms, with equal number of positive and negative examples of taxonomic relations.)
+3. Animal, Plant and Vehicle datasets (They are taxonomies constructed based on the dictionaries and data crawled from the Web for the corresponding domains.)
+
+### Compared Methods
+1. SVM + Our
+2. SVM + Word2Vec
+3. SVM + Yu
+
 
 ---
 
