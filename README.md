@@ -91,9 +91,12 @@ This is a note for constructing taxonomy.
 
 
 ### Datasets
-1. BLESS(It covers 200 distinct, unambiguous concepts (terms); each of which is involved with terms, called relata, in some relations.)
-2. ENTAILMENT(It consists of 2,770 pairs of terms, with equal number of positive and negative examples of taxonomic relations.)
-3. Animal, Plant and Vehicle datasets (They are taxonomies constructed based on the dictionaries and data crawled from the Web for the corresponding domains.)
+**1. BLESS**
+It covers 200 distinct, unambiguous concepts (terms); each of which is involved with terms, called relata, in some relations.
+**2. ENTAILMENT**
+It consists of 2,770 pairs of terms, with equal number of positive and negative examples of taxonomic relations.
+**3. Animal, Plant and Vehicle datasets**
+They are taxonomies constructed based on the dictionaries and data crawled from the Web for the corresponding domains.
 
 ### Compared Methods
 1. SVM + Our
