@@ -4,10 +4,25 @@ This is a note for constructing taxonomy.
 ---
 
 ## 总结研究
-### Pattern-Based Methods
-Based on hypernym-hyponym pairs from the corpus.
-### Clustering-Based Methods
-### Supervised Methods
+
+### Statistical Approaches（统计方法）
+* 频繁共同出现的词更可能有taxonomic relationship
+* 但这种方法非常依赖于特征类型的选取，正确率低
+
+### Pattern-Based Methods（语言学方法）
+* Based on hypernym-hyponym pairs from the corpus（基于词汇语义结构）
+* 因为语言结构的多样性和组成的不确定性，通过特别的pattern进行寻找，使得coverage低，正确率低
+
+### Word Embedding
+* 主要集中在通过词共生（word co-occurrence），来学习word embedding
+* 因此，相似的词往往有相似的embedding
+* 然而，此方法对于identify taxonomic relations效果差
+
+
+### Clustering-Based Methods（无监督学习）
+
+### Supervised Methods（监督学习）
+* 训练集不可能包含所有的taxonomic relations，所以一定存在缺点
 
 ---
 
