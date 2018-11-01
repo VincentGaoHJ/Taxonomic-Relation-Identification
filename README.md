@@ -59,6 +59,44 @@ This is a note for constructing taxonomy.
 3. Cluster Quality
 
 ---
+## [Learning Term Embeddings for Hypernymy Identification](http://pdfs.semanticscholar.org/0fc0/33f32f420ed3ff4330f60ccd0686db3deaea.pdf)
+
+### Contributions
+
+* We introduce a dynamic distance margin model to learn term embeddings that capture hypernymy properties, and we train an SVM classifier for hypernymy identification using the embeddings as features.
+* 之前Hypernymy Identification的工作主要基于词汇模式（lexical pattern）和分布假设（distributional inclusion hypothesis），准确率不高。
+* 现在设计了一种distance-margin neural network ，通过提前获得的上位关系数据，来学习term embedding。然后把获得的term embedding作为特征，通过有监督的方法来识别上下位关系。
+* 原先人们非常关注从 term co-occurrence data 学习，因此相似的词语往往有相似的 embedding，但是我们需要判别的是两个词语是否有特定的关系，而不是经常一起出现。
+* 更高的准确率，not domain dependent
+
+
+
+### Methods
+
+**1. Dynamic distance-margin model**
+  * **embedding for the hypernymy relationship**
+    * 每个term有两个embedding，一个hyponym embedding O，一个hypernym embedding E
+    * 所有的embedding 满足三个性质：
+      1. hyponym-hypernym similarity
+      2. co-hyponym similarity
+      3. co-hypernym similarity
+
+  * **learning embedding**
+    * hypernymy relationship：x=（v,u,q），v hypernyms，u hyponyms
+    * 目标：O(u)接近E(v)
+
+
+
+  * **neural network architecture**
+
+**2. Supervised hypernymy identification**
+  * f(x)<Δ，确定阈值Δ比较困难
+  * 因此使用SVM，输入特征为O(u)、E(v)、O(u)-E(v)
+
+
+
+
+---
 
 ## [Learning Term Embeddings for Taxonomic Relation Identification Using Dynamic Weighting Neural Network](http://www.aclweb.org/anthology/D16-1039)
 
