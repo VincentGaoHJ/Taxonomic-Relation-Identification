@@ -59,6 +59,21 @@ This is a note for constructing taxonomy.
 3. Cluster Quality
 
 ---
+
+## [Customized organization of social media contents using focused topic hierarchy](https://dl.acm.org/citation.cfm?id=2661829.2661896)
+
+### Abstract
+
+### Introduction
+
+### Related work
+
+### Methodology
+
+### Evaluation
+
+---
+
 ## [Learning Term Embeddings for Hypernymy Identification](http://pdfs.semanticscholar.org/0fc0/33f32f420ed3ff4330f60ccd0686db3deaea.pdf)
 
 ### Contributions
