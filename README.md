@@ -81,6 +81,19 @@ This is a note for constructing taxonomy.
 
 ### Related work
 
+* **Information organization**
+    * Past: split corpus into shallow clusters
+    * Recent: organize corpus into cluster hierarchies, such as hierarchical LDA…
+
+* **Topic hierarchy generation**
+    * Didn’t consider users’ information as input
+
+* **Problem formulation**
+    * Social media corpus
+    * User information needs
+    * Focused topic hierarchy
+
+
 ### Methodology
 
 ### Evaluation
