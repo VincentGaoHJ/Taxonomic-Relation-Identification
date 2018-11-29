@@ -60,19 +60,21 @@ This is a note for constructing taxonomy.
 
 ---
 
-## [Customized organization of social media contents using focused topic hierarchy](https://dl.acm.org/citation.cfm?id=2661829.2661896)
+## [Customized Organization of Social Media Contents using Focused Topic Hierarchy](https://dl.acm.org/citation.cfm?id=2661829.2661896)
 
-### Abstract
+### Contributions
 
-* A novel function to measure the likelihood of a topic hierarchy
-* A probability based model to identify the representative contents for topics 
+* **Focused topic hierarchy construction:**
+We introduce the focused topic hierarchy to provide users a customized view of the social media contents, in which the information need is seamlessly incorporated into the topic hierarchy construction process.
+* **Customized representative content selection:**
+We develop a probability model to identify the representative content for each topic node on the hierarchy, which enables fast information retrieval on the hierarchically organized social media corpus.
 
 
 ### Introduction
 
 * Information overload and noise —— organizing the social media contents into a general topic hierarchy.
 * Find useful contents is time-consuming —— identify representative contents for each node on the hierarchy.
-* Step:
+* Step
     * Step1: use propagation algorithm to collect the potentially useful topics.
     * Step2: devise a function to estimate likelihood of a topic hierarchy and use it to integrate topic hierarchy, which fit social media corpus and user need.
     * Step3: propose a probability based ranking model
@@ -96,7 +98,6 @@ This is a note for constructing taxonomy.
 
 ### Methodology
 
-#### framework
 #### Corpus collection and topic modeling
 1. topic extraction
     * TF-IDF generate topic set
@@ -192,7 +193,7 @@ Given information need and social media corpus ——our task is to collect a su
 * **和Yu et al.（2015）的工作很像，distance-margin neural network（这个可以看一下）**
 
 **1. Learning Term Embedding**
-
+  
 * Extracting taxonomic relations
   * 用WordNet hierarchies获得所有的taxonomic relations，去掉其中的top-level terms
 * Extracting training triples
