@@ -96,7 +96,50 @@ This is a note for constructing taxonomy.
 
 ### Methodology
 
+#### framework
+#### Corpus collection and topic modeling
+1. topic extraction
+    * TF-IDF generate topic set
+    * Salience score measure importance
+2. topic relation
+    * Topic relevance ——semantic relatedness between two topic
+    * Subtopic relation strength ——likelihood of subtopic
+
+#### Graph-based focused topic discovering
+Given information need and social media corpus ——our task is to collect a subset Tq
+* co-occurrence based method（共同出现的topic，建立粗糙的子集）
+* graph-based label propagation algorithm to refine 
+
+#### Information need-aware topic hierarchy construction
+* likelihood of topic hierarchy construction
+    * Information need’s perspective
+    * Taxonomy structure’s perspective
+
+* topic hierarchy construction algorithm
+
+
+#### Topic hierarchy based customized corpus organization
+* Representative document selection
+    * 1 its position on the hierarchy
+    * 2 documents’ source
+
+* OkapiBM25 function
+* Bayesian rule(priori probability)
+
+
 ### Evaluation
+
+* social media corpus
+* test information needs（来源：搜索引擎的相关搜索）
+
+* focused topic discovering（与只用其中一个指标的情况进行对比，topic salience，topic relevance）
+* focused topic hierarchy construction
+    * 1 对假设进行验证
+    * 2 方法对比
+* customized corpus organization
+    * nDCG
+    * ablation study
+
 
 ---
 
