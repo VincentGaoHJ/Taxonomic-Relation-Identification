@@ -60,6 +60,38 @@ This is a note for constructing taxonomy.
 
 ---
 
+## [Differentiating Concepts and Instances for Knowledge Graph Embedding](https://arxiv.org/abs/1811.04588)
+### Contributions
+1. first to propose and formalize the problem of knowledge graph embedding which differentiates between concepts and instances.
+2. We propose a novel knowledge embeddin method named TransC, which distinguishe between concepts and instances and deal with the transitivity of isA relations.
+3.  We construct a new dataset based on YAGO for evaluation. Experiments on link prediction and triple classification demonstrate that TransC successfully addresses the above problems and outperforms state-of-the-art methods.
+
+### Related Work
+
+* Translation-based Models
+* Bilinear Models
+* External Information Learning Models
+
+### Approach
+**1. TransC**
+* InstancesOf Triple Representation
+* SubClassOf Triple Representation
+* Relation Triple Representation
+
+**2. Training Method**
+* **Margin-based ranking loss**
+    * Le: instanceOf triples
+    * Lc: subClassOf triples
+    * Ll: relational triples
+* **Retrieve sub-corpus for topic: L = Le + Lc + Ll .**
+
+### Experiments and Analysis
+* Datasets: YAGO
+* Link Prediction
+* Triple Classification
+
+---
+
 ## [Customized Organization of Social Media Contents using Focused Topic Hierarchy](https://dl.acm.org/citation.cfm?id=2661829.2661896)
 
 ### Contributions
